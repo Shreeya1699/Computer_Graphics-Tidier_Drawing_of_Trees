@@ -8,7 +8,7 @@ Implementation of Research paper: 'Tidier Drawing of Trees', Authors : Edward M.
 3. g++ script.cpp
 
 
- Team:
+## Team:
 
     Shreeya Bharat Nelekar - 2017A7PS0093H
         Department of Computer Science
@@ -17,7 +17,7 @@ Implementation of Research paper: 'Tidier Drawing of Trees', Authors : Edward M.
     Sriram Kodey - 2018A4PS0671H
         Department of Mechanical Engineering
 
-General Discussion on Algorithm
+## General Discussion on Algorithm
 
 Wetherell and Shannon have presented this algorithm which is a modification of Algorithm WS, that guarantees minimum widthd rawings. This algorithm does a preorder traversal of the nodes and the left and right shortest subtrees to get the geometric coordinates of the nodes. While construction of this algorithm following aesthetics were kept in mind-
 
@@ -44,7 +44,7 @@ References:
     https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/
     https://www.cs.brandeis.edu/~cs155/OpenGL%20Lecture_02.pdf
 
-Timing Analysis:
+## Timing Analysis:
 
 • constructTree() - The function for construction of tree from its preorder anad inorder traversal. The average time complexity of this function is O(h), where h height of the binary search tree. Best case time complexity: O(log2n), Worst case time complexity :O(n)
 
@@ -52,12 +52,13 @@ Timing Analysis:
 
 Initially, 1 traversal is considered per 2 nodes to account for their three member tree with their direct parent, adding all of them on this level gives us pi/2. Then to this we add 1 traversal per adjacent right child and left child nodes who don't have direct common parents on the above level . We have (pi-2)/2 of these (Since first and last are removed leaving us with pi-2 nodes which we have to take 2 at a time thus we divide by 2) adding both we get pi-1 total traversals that a level adds. Summing all the pi's over all levels we get the number of traversals as:
 
-  The number of nodes (N(T)) - The height of the tree (H(T)). 
+    The number of nodes (N(T)) - The height of the tree (H(T)). 
 
 Therefore we can say that this algorithm is linear in the number of nodes of the tree in terms of time complexity, i.e O(n).
 
 • Drawing using Bresenham Algorithms: The tree is drawn by traversing the tree using BFS and in the course draing the circle and connecting lines. As BFS has complexity of O(V+E) where V is number of nodes of the tree and E is the number of edges. Hence for the case of binary search tree , V =n and E is of order O(n) . Therefore complexity of drawing the tree in O(n).
-Scope of Improvement:
+
+## Scope of Improvement:
 
 The code can be made faster at the cost of memory, which will be used to store the (x,y) co-ordinates of the nodes thus eliminating the need to traverse the tree again while drawing the lines and circles. 
 
