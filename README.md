@@ -53,3 +53,12 @@ Therefore we can say that this algorithm is linear in the number of nodes of the
 Scope of Improvement:
 
 The code can be made faster at the cost of memory, which will be used to store the (x,y) co-ordinates of the nodes thus eliminating the need to traverse the tree again while drawing the lines and circles. 
+
+## Compiling Instructions:
+
+1. gcc -c glDraw.h
+2. g++ -o main main.cpp glDraw.h Tidier_algo.h -lGL -lGLU -lglut
+3. g++ script.cpp
+
+This compiles the project.
+
