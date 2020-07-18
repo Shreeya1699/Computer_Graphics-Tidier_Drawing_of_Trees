@@ -1,0 +1,2 @@
+# Computer_Graphics-Tidier_Drawing_of_Trees
+Implementation of Research paper: 'Tidier Drawing of Trees', Authors : Edward M. Reingold and John S. Tilford, Journal: IEEE Transaction on, Software Engineering, Vol-7, Issue-2, 1981. The algorithm is implemented on Binary trees. Bresenham algorithms for line and circle drawing were used to draw the binary tree. Opengl and freeglut is used for rendering of the figures.
